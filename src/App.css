@@ -1,0 +1,50 @@
+#root {
+  /* Remove or adjust these if they're not needed globally */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%; /* Ensure it takes full width */
+
+  /* Add more colors as needed */
+}
+
+
+.App {
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Use flexbox to create two side-by-side sections */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.half {
+  flex: 1; /* Each section takes up half of the container */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  cursor: pointer; /* Change mouse cursor to pointer when hovering over the sections */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  padding: 0; /* Remove padding if any */
+  margin: 0; /* Remove margin if any */
+}
+
+.left, .right {
+  width: 50%; /* Ensure each side takes up exactly half the space */
+}
+
+.left {
+  background-color: white; /* Left side background color */
+  color: black; /* Left side text color */
+}
+
+.right {
+  background-color: var(--color-primary);
+  color: white; /* Right side text color */
+}
+
+.half:hover {
+  opacity: 0.8; /* Slightly dim the section on hover */
+}
+
+.bold-and-large {
+  font-weight: bold; /* Make the text bolder */
+  font-size: 1.2em; /* Make the text larger */
+}

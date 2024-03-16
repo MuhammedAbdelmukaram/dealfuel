@@ -1,0 +1,96 @@
+/* SalesRepSignup.module.css */
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left, .right {
+    flex: 1 1 50%; /* Take up half of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left {
+    background: var(--color-secondary); /* Or you can specify a color or leave it if you want it completely blank */
+}
+
+
+.right {
+    background: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1a1a1a;
+    align-items: center;
+    padding: 20px; /* Adjust based on your design */
+    text-align: center; /* Centers the text */
+}
+
+.marketingContent{
+    padding: 4rem;
+}
+
+.marketingContent h1 {
+    font-size: 4em;
+    text-align: left;
+    margin-bottom: 20px; /* Spacing between elements */
+}
+
+.marketingContent p {
+    font-size: 1em; /* Adjust based on your design */
+    margin-bottom: 10px; /* Spacing between elements */
+    text-align: left;
+}
+
+.smallText {
+    font-size: 0.8em; /* Smaller text for the secondary information */
+    opacity: 0.7; /* Less emphasis on this text */
+}
+
+
+/* For smaller screens, make right section take full width and potentially hide the left */
+@media (max-width: 768px) {
+    .left {
+        display: none; /* Hide the left section on smaller screens */
+    }
+    .right {
+        flex-basis: 100%; /* The right section takes the full width on smaller screens */
+    }
+}
+
+.signupForm {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.signupForm label {
+    margin: 10px 0 5px;
+}
+
+.signupForm input[type="text"],
+.signupForm input[type="email"],
+.signupForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Adds some space below the inputs */
+}
+
+.signupForm button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--color-primary); /* Using CSS variable for consistency */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.signupForm button:hover {
+    background-color: darken(var(--color-primary), 10%); /* Darken the button on hover, ensure you have a method to handle darken function */
+}

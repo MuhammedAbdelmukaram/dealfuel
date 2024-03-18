@@ -23,7 +23,7 @@ const Profile = () => {
             <div className={styles.introSection}>
                 <h1>Hi, my name is Devantae! 👋</h1>
                 <div className={styles.videoPreview} onClick={togglePlay}>
-                    <video ref={videoRef} src="/path-to-your-video.mp4" type="video/mp4" alt="Devantae's Introduction" className={styles.videoElement} />
+                    <video ref={videoRef} src="/StratFlowVideo.mp4" type="video/mp4" alt="Devantae's Introduction" className={styles.videoElement} />
                     {!isPlaying && <button className={styles.playButton}>▶</button>}
                 </div>
                 <div className={styles.actionButtons}>

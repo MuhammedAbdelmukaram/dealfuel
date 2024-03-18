@@ -7,7 +7,7 @@ const Bookmarks = () => {
         <div className={styles.container}>
             <Header/>
             <div className={styles.comingSoonContainer}>
-                <p className={styles.comingSoonText}>I said Coming soon my G </p>
+                <p className={styles.comingSoonText}>I said Coming soon my G heh</p>
             </div>
         </div>
     );

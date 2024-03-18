@@ -10,7 +10,7 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.leftSection}>
                 <img
-                    src="/PaidBabyBlue.png" // Replace with your logo path
+                    src="/OrangeLogo.png" // Replace with your logo path
                     alt="Logo"
                     className={styles.logo}
                     onClick={() => navigate('/dashboard')} // Navigates back to the homepage or dashboard

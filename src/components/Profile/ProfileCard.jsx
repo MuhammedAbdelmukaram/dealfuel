@@ -11,14 +11,20 @@ const ProfileCard = ({name, surname, location, bio, language, experience, niche,
             <div className={styles.upperSection}>
                 <img src={imageUrl} alt={`${name} ${surname}`} className={styles.profilePic}/>
                 <div className={styles.upperSectionTexts}>
-                    <h3 className={styles.name}>{name} {surname}</h3>
-                    <div className={styles.locationWrapper}>
-                        <img src={"/location.png"} alt={`${name} ${surname}`} className={styles.icon}/>
-                        <p className={styles.location}>{location}</p>
+                    <div className={styles.upperSectionHeader}>
+                        <div className={styles.nameAndLocation}>
+                            <h3 className={styles.name}>{name} {surname}</h3>
+                            <div className={styles.locationWrapper}>
+                                <img src={"/location.png"} alt="Location" className={styles.icon}/>
+                                <p className={styles.location}>{location}</p>
+                            </div>
+                        </div>
+                        <img src={"/bookmark.png"} alt="Bookmark" className={styles.bookmarkIcon}/>
                     </div>
                     <p className={styles.bio}>{bio}</p>
                 </div>
             </div>
+
 
             <div className={styles.info}>
                 <Bullet type={"Language"} value={"English"}/>

@@ -12,7 +12,7 @@ const App = () => {
     const location = useLocation(); // This is used by AnimatePresence to detect location changes
 
     return (
-        <AnimatePresence>
+        <AnimatePresence mode='wait'>
 
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Homepage />} />

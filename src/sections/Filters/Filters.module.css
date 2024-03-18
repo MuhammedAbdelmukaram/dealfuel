@@ -7,7 +7,8 @@
     color: white;
     border-radius: 8px; /* Optional, for styled corners */
     width: 250px; /* Adjust width as necessary */
-
+    position: sticky;
+    top: 104px; /* Adjust this value based on your header's height or desired distance from the top */
 }
 
 .filterSection {

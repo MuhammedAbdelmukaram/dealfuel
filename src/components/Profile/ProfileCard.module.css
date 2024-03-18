@@ -1,11 +1,22 @@
 .profile {
-    border: 1px solid #ccc;
+    position: relative; /* Add this line */
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
     width: 700px;
     background-color: #2b2b2d;
 }
+
+
+.bookmarkIcon {
+    width: 24px; /* Adjust based on your needs */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    position: absolute; /* Position relative to nearest positioned ancestor */
+    top: 20px; /* Adjust based on your layout */
+    right: 20px; /* Adjust based on your layout */
+}
+
 
 .profilePic {
     width: 200px; /* Adjust based on your needs */
@@ -17,7 +28,7 @@
 
 .icon {
     width: 24px; /* Or your desired size */
-
+    height: 24px;
     cursor: pointer;
 }
 
@@ -35,6 +46,11 @@
 
 }
 
+.upperSectionTextsInner{
+
+
+}
+
 .name {
     font-size: 20px;
     color: #fff;
@@ -42,7 +58,8 @@
 }
 .locationWrapper{
     display: flex;
-
+    margin-top: 16px;
+    gap: 8px;
 }
 
 .location {
@@ -60,17 +77,17 @@
 .hireButton {
     width: 100%; /* Make the button full width */
     padding: 10px 0; /* Add some padding for better appearance */
-    background-color: #525af1; /* Choose a color for your button */
+    background-color: #d05f1a; /* Choose a color for your button */
     color: white; /* Text color */
     border: none; /* Remove border */
     border-radius: 8px; /* Optional: if you want rounded corners */
     cursor: pointer; /* Change mouse cursor on hover */
-    margin-top: 20px; /* Add some space between the button and the info above */
+    margin-top: 30px; /* Add some space between the button and the info above */
     font-size: 14px; /* Adjust font size as needed */
 }
 
 .hireButton:hover {
-    background-color: #444ce5; /* Darker shade for hover effect */
+    background-color: #bb5516; /* Darker shade for hover effect */
 }
 
 

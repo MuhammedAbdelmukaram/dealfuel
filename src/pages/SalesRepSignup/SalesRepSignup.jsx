@@ -85,7 +85,7 @@ const SalesRepSignup = () => {
                     key={contentIndex}
                     initial="initial"
                     animate="in"
-                    exit="out"
+                    exit="out"u
                     variants={textVariants}
                     transition={{ type: "tween", duration: 0.5 }}
                 >

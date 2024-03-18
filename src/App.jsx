@@ -6,7 +6,10 @@ import SalesRepSignup from './pages/SalesRepSignup/SalesRepSignup.jsx';
 import CompanySignup from './pages/CompanySignup/CompanySignup.jsx';
 import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 import LoadingScreen from "./pages/LoadingScreen/LoadingScreen.jsx";
-import Profile from "./pages/Profile/Profile.jsx"; // Assuming you have this component as well
+import Profile from "./pages/Profile/Profile.jsx";
+import Bookmarks from "./pages/Bookmarks/Bookmarks.jsx";
+import Messages from "./pages/Messages/Messages.jsx";
+import MyJobs from "./pages/MyJobs/MyJobs.jsx"; // Assuming you have this component as well
 
 const App = () => {
     const location = useLocation(); // This is used by AnimatePresence to detect location changes
@@ -20,6 +23,9 @@ const App = () => {
                 <Route path="/company/signup" element={<CompanySignup />} />
                 <Route path="/loader" element={<LoadingScreen />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/myjobs" element={<MyJobs />} />
+                <Route path="/messages" element={<Messages />} />
+                <Route path="/bookmarks" element={<Bookmarks />} />
                 <Route path="/dashboard" element={<Dashboard />} /> {/* Add the Dashboard route */}
 
                 {/* Additional routes */}

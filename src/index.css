@@ -3,10 +3,11 @@
   line-height: 1.5;
   font-weight: 400;
 
+  margin: 0;
+  padding: 0;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,11 +15,34 @@
   --color-primary: #101828; /* Primary blue */
   --color-secondary: #6c757d; /* Secondary gray */
   --color-accent: #28a745; /* Green for success messages, buttons, etc. */
-  --color-background: #ffffff; /* White background */
-  --color-text: #212529; /* Primary text color */
+  --color-background: #2b2b2c; /* White background */
+  --color-text: #f3f3f3; /* Primary text color */
   --color-text-secondary: #6c757d; /* Secondary text color */
   --color-border: #dee2e6; /* Border color */
 }
+
+/* Scrollbar Container */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #242424; /* Dark background color that matches your theme */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff; /* A primary color from your palette */
+  border-radius: 6px;
+  border: 3px solid #242424; /* Same as the scrollbar track color for coherence */
+}
+
+/* Scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e0e0e0; /* A slightly lighter shade for hover effect, matching your a:hover color */
+}
+
 
 a {
   font-weight: 500;
@@ -31,11 +55,16 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   min-height: 100vh;
+  /* Remove display and place-items from here */
+  background-color: var(--color-background);
+
 }
+
+
+
 
 h1 {
   font-size: 3.2em;

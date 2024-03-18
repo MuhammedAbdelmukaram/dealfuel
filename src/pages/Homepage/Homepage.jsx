@@ -1,9 +1,9 @@
-// HomePage.js
+// Homepage.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Homepage.module.css'; // Adjust the path as needed
 
-const HomePage = () => {
+const Homepage = () => {
     const navigate = useNavigate(); // Hook to enable navigation
 
     return (
@@ -26,4 +26,4 @@ const HomePage = () => {
     );
 }
 
-export default HomePage;
+export default Homepage;

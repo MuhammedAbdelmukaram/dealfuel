@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    height: 20px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px;
+    background-color: #4d4d4d;
+    border: 1px solid #ffff;
+    border-radius: 32px;
+    gap: 6px;
+}
+
+.type{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.value{
+    font-size: 12px;
+}

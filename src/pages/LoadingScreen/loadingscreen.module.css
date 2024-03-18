@@ -1,0 +1,36 @@
+@keyframes rotateImage {
+    0%, 25% { /* Start and hold the initial position for the pause duration */
+        transform: rotate(0deg);
+    }
+    30% { /* End of first rotation */
+        transform: rotate(120deg);
+    }
+    30.1%, 55% { /* Hold position for the pause */
+        transform: rotate(120deg);
+    }
+    60% { /* End of second rotation */
+        transform: rotate(240deg);
+    }
+    60.1%, 85% { /* Hold position for the pause */
+        transform: rotate(240deg);
+    }
+    90% { /* End of third rotation */
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaderBackground{
+    background-color: var(--color-primary);
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+
+.rotatingImage {
+    display: inline-block;
+    animation: rotateImage 3.5s linear infinite;
+}

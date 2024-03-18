@@ -59,7 +59,7 @@ body {
   font-family: 'Catamaran', sans-serif;
   min-height: 100vh;
   /* Remove display and place-items from here */
-  background-color: var(--color-background);
+  background-color: #242424;
 
 }
 

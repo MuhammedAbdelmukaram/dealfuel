@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.comingSoonContainer {
+    flex-grow: 1; /* Takes up all available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #ffffff; /* Set the text color to grey */
+    background-color: #242424; /* Adjust if you have a specific background color */
+}
+
+.comingSoonText {
+    font-size: 24px; /* Adjust based on your design preferences */
+    font-weight: bold; /* Makes the text bold */
+}
